@@ -1,5 +1,5 @@
 let arr = ["OMV.png","RG.png","FCC.png","RENOV.png","VNT.svg","BRT.jpeg","BSNL.png","TAN.jpg","TEP.svg","TOY.png","TVR.png","BUCO.png","FG.png",
-            "EM.png","LS.png","LS.png","Maspex.png","NEST.png","LOGO NOU.jpg","LM.png","MON.png","RG.png","SC.png","SPIETH.png","STERG.png",
+            "EM.png","LS.png","Maspex.png","NEST.png","LOGO NOU.jpg","LM.png","MON.png","RG.png","SC.png","SPIETH.png","STERG.png",
             "QS.jpg","AP.png","AR.png","IWA.png","UZ.png","MED.png"]
 
 for(let i=0; i<arr.length; i++){

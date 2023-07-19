@@ -242,3 +242,37 @@
         display: none;
     }
 }
+
+.gallery-section {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+ .gallery-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+ }
+
+ @media screen and (max-width:1200px) {
+    .gallery-container{
+        grid-template-columns: 1fr 1fr;
+    }
+ }
+
+ @media screen and (max-width:720px) {
+    .gallery-container{
+        grid-template-columns: 1fr;
+    }
+ }
+
+ .img-gallery-container{
+    overflow: hidden;
+    margin: 1rem 3rem;
+  }
+
+  .img-gallery-container img{
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+  }
