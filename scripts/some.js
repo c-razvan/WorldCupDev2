@@ -1,5 +1,5 @@
             // Set the date we're counting down to
-            var countDownDate = new Date("Oct 11, 2023 00:00:00").getTime();
+            var countDownDate = new Date("oct 11, 2023 00:00:00").getTime();
             
             // Update the count down every 1 second
             var x = setInterval(function() {
@@ -23,9 +23,11 @@
               document.getElementById("secunde").innerHTML = seconds
             
               // If the count down is finished, write some text
+
               if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("demo").innerHTML = "Evenimentul s-a încheiat";
+                document.getElementById("not-started").style.display = "none";
+                document.getElementById("started-live-main").style.display = "flex";
               }
             }, 1000);
 

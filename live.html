@@ -44,9 +44,11 @@
 }
 
 </style>
-<noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
-
-</style>
+<noscript>
+    
+    <style amp-boilerplate>
+    body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+    </style>
 
 </noscript>
 <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
@@ -54,22 +56,31 @@
  <link rel="stylesheet" href="./css/Newstyle.css">
  <link rel="stylesheet" href="./css/AdditionalStyle.css">
 
- <style amp-custom> </style>
-  <script async  src="https://cdn.ampproject.org/v0.js"></script>
-  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-  <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
-  <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
-  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
-  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
-  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
-  <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
-  <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-  <script src="./scripts/some.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="./scripts/sponsor-slider.js" async ></script>
+
+ <!--scripts-->   
+
+ <script async src="https://cdn.ampproject.org/v0.js"></script>
+ <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+ <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+ <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+ <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+ <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+ <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+ <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+ <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+ <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+ <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+ <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+   <!--Custom Scripts--> 
+   
+ <script async src="./scripts/some.js"></script>
+ <script src="./scripts/sponsor-slider.js" async ></script>
+ <script src="./scripts/slick-carousel.js" defer></script>
+ <script src="./scripts/button.js" async></script>
+ <script defer src="./scripts/sponsori.js"></script>
+ 
 
 </head>
 <body>
@@ -420,7 +431,7 @@
 
 <!--Body-->
 
-<div class="" style="padding-top: 90px;">
+<div style="padding-top: 90px; padding-bottom: 10vh;" id="not-started">
     
     <h2 class="title-page">LIVE</h2>
 
@@ -463,13 +474,16 @@
 
 </div>
 
-<div class="no" style="padding-top: 80px;">
+<div style="padding-top: 90px;" class="no">
     
     <h2 class="title-page">LIVE</h2>
     
-    <div style="display: flex; justify-content: center;">
-        <iframe  src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Ffrgimnastica%2Fvideos%2F1290254148530883%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+    <div style="display: flex; justify-content: center;" id="start-live">
+        <div style="position: relative;overflow: hidden;width: 75%; padding-top: 56.25%;"  >
+            <iframe style="position: absolute;top: 0;left: 0; bottom: 0;  right: 0; width: 100%; height: 100%;" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Ffrgimnastica%2Fvideos%2F1290254148530883%2F&show_text=false&width=560&t=0" width="1280" height="720" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        </div>
     </div>
+   
 
 </div>
     
@@ -480,15 +494,15 @@
 
 <div class="line"></div>
 
- <section class="header2 cid-tl5RmVDW6n" id="header2-s">
+ <section class="header2 cid-tl5RmVDW6n" id="header2-s line">
     <div class="container">
         <h2 class="header">Meet Our Parteners!</h2>
     </div>
 
     <div class="parteners">
-        <img src="./css/Sponsor Logos/ORG/international-gymnastics-federation-fig-vector-logo.svg" alt="">
-        <img src="./css/Sponsor Logos/ORG/FMS.png" alt="">
-        <img src="./css/Sponsor Logos/ORG/COSR.png" alt="">
+        <img src="./assets/Sponsor Logos/ORG/international-gymnastics-federation-fig-vector-logo.svg" alt="">
+        <img src="./assets/Sponsor Logos/ORG/FMS.png" alt="">
+        <img src="./assets/Sponsor Logos/ORG/COSR.png" alt="">
     </div>
 
 </section>
@@ -500,43 +514,12 @@
 </section>
 
 <section class="sposnor-slider">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
 
 <div class="container">
-   <section class="customer-logos slider white">
-      <div class="slide"><img src="./css/Sponsor Logos/OMV.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/RG.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/FCC.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/RENOV.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/VNT.svg"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/BRT.jpeg"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/BSNL.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/TAN.jpg"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/TEP.svg"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/TOY.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/TVR.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/BUCO.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/FG.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/EM.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/LS.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/Maspex.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/NEST.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/LOGO NOU.jpg"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/LM.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/MON.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/RG.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/SC.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/SPIETH.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/STERG.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/QS.jpg"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/AP.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/AR.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/IWA.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/UZ.png"></div>
-   </section>
+   <section class="customer-logos slider white" id="append-in"></section>
 </div>
 </section>
-
     
 <!--Footer-->
 

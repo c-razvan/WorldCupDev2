@@ -67,13 +67,17 @@
 <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
 <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
 <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-<script src="./scripts/some.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!--Custom Scripts--> 
+  
+<script async src="./scripts/some.js"></script>
 <script src="./scripts/sponsor-slider.js" async ></script>
 <script src="./scripts/slick-carousel.js" defer></script>
 <script src="./scripts/button.js" async></script>
+<script defer src="./scripts/sponsori.js"></script>
 
 </head>
 
@@ -436,8 +440,10 @@
 
     </amp-carousel>
 
-    <div class="date-container">
+    <div class="date-container" id="not-started">
+
         <p class="header-date">The Event Starts in</p>
+
         <table class="date-table">
             <tr class="tr1">
                 <td>
@@ -468,6 +474,42 @@
                 </td>
             </tr>
         </table>
+
+    </div>
+
+    <div class="date-container" id="started-live-main" style=" display: none; justify-content: center; align-items: center;">
+
+        <p class="header-date">Watch Here</p>
+        
+        <a style="display: flex; align-items: center;justify-content: space-evenly; background-color: goldenrod; border-radius: 5rem; width: 10rem;" href="./live.html">
+            
+
+            <svg version="1.1" id="Tab-Ico"
+            id="Layer_1" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:svg="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 8.47 8.1"
+            style="enable-background:new 0 0 8.47 8.1;" xml:space="preserve">
+             <style type="text/css">
+           .st0{fill:#FFFFFF;}
+             </style>
+             <g>
+           <path class="st0" d="M1.06,1.6c-0.09,0-0.17,0.04-0.22,0.11C0.29,2.44,0,3.33,0,4.23c0,0.91,0.29,1.8,0.84,2.53
+               C0.92,6.88,1.09,6.9,1.21,6.81c0.12-0.09,0.14-0.25,0.05-0.37l0,0C0.79,5.8,0.53,5.03,0.53,4.23c0-0.8,0.26-1.57,0.73-2.21
+               c0.09-0.12,0.07-0.28-0.05-0.37C1.17,1.62,1.11,1.6,1.06,1.6z M7.4,1.6C7.26,1.61,7.14,1.73,7.15,1.88c0,0.05,0.02,0.1,0.05,0.15
+               c0.47,0.64,0.73,1.41,0.73,2.21c0,0.8-0.26,1.57-0.73,2.21C7.12,6.56,7.14,6.73,7.26,6.81C7.38,6.9,7.55,6.88,7.63,6.76
+               c0.54-0.73,0.83-1.62,0.83-2.53c0-0.91-0.29-1.8-0.83-2.53C7.58,1.64,7.49,1.59,7.4,1.6z M1.94,2.38c-0.09,0-0.17,0.04-0.22,0.12
+               C1.37,3.01,1.18,3.61,1.18,4.23c0,0.62,0.19,1.23,0.54,1.74C1.8,6.09,1.97,6.13,2.09,6.05C2.21,5.97,2.24,5.8,2.16,5.68
+               c0,0,0,0-0.01-0.01C1.86,5.25,1.71,4.75,1.71,4.23c0-0.51,0.15-1.02,0.45-1.44c0.08-0.12,0.06-0.28-0.06-0.37
+               C2.05,2.4,1.99,2.38,1.94,2.38z M6.52,2.38c-0.15,0-0.26,0.12-0.26,0.27c0,0.05,0.02,0.1,0.05,0.15C6.6,3.22,6.76,3.72,6.76,4.23
+               c0,0.51-0.16,1.01-0.45,1.44C6.23,5.79,6.25,5.96,6.37,6.04C6.49,6.13,6.66,6.1,6.74,5.98c0,0,0,0,0.01-0.01
+               C7.1,5.46,7.29,4.86,7.29,4.23c0-0.62-0.19-1.23-0.54-1.74C6.7,2.42,6.61,2.38,6.52,2.38z M4.23,2.45c-0.98,0-1.79,0.8-1.79,1.79
+               s0.8,1.79,1.79,1.79s1.79-0.8,1.79-1.79S5.22,2.45,4.23,2.45z M4.23,2.97c0.7,0,1.26,0.56,1.26,1.26S4.93,5.49,4.23,5.49
+               S2.97,4.93,2.97,4.23S3.54,2.97,4.23,2.97z"/>
+             </g>
+            </svg>
+
+       <p style="color: #FFFFFF; margin: 0;">LIVE</p>
+
+        </a>
 
     </div>
 
@@ -524,39 +566,18 @@
             <span class="iconfont-wrapper">
                 <span class="mbr-iconfont2 mbr-iconfont fa-shopping-cart fa">
 
-                    <svg version="1.1" id="Tab-Ico"
-                         id="Layer_1" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:svg="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/"
-                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 8.47 8.1"
-                         style="enable-background:new 0 0 8.47 8.1;" xml:space="preserve">
-                    <style type="text/css">
-                        .st0{fill:#FFFFFF;}
-                    </style>
-                    <g>
-                        <path class="st0" d="M1.06,1.6c-0.09,0-0.17,0.04-0.22,0.11C0.29,2.44,0,3.33,0,4.23c0,0.91,0.29,1.8,0.84,2.53
-                            C0.92,6.88,1.09,6.9,1.21,6.81c0.12-0.09,0.14-0.25,0.05-0.37l0,0C0.79,5.8,0.53,5.03,0.53,4.23c0-0.8,0.26-1.57,0.73-2.21
-                            c0.09-0.12,0.07-0.28-0.05-0.37C1.17,1.62,1.11,1.6,1.06,1.6z M7.4,1.6C7.26,1.61,7.14,1.73,7.15,1.88c0,0.05,0.02,0.1,0.05,0.15
-                            c0.47,0.64,0.73,1.41,0.73,2.21c0,0.8-0.26,1.57-0.73,2.21C7.12,6.56,7.14,6.73,7.26,6.81C7.38,6.9,7.55,6.88,7.63,6.76
-                            c0.54-0.73,0.83-1.62,0.83-2.53c0-0.91-0.29-1.8-0.83-2.53C7.58,1.64,7.49,1.59,7.4,1.6z M1.94,2.38c-0.09,0-0.17,0.04-0.22,0.12
-                            C1.37,3.01,1.18,3.61,1.18,4.23c0,0.62,0.19,1.23,0.54,1.74C1.8,6.09,1.97,6.13,2.09,6.05C2.21,5.97,2.24,5.8,2.16,5.68
-                            c0,0,0,0-0.01-0.01C1.86,5.25,1.71,4.75,1.71,4.23c0-0.51,0.15-1.02,0.45-1.44c0.08-0.12,0.06-0.28-0.06-0.37
-                            C2.05,2.4,1.99,2.38,1.94,2.38z M6.52,2.38c-0.15,0-0.26,0.12-0.26,0.27c0,0.05,0.02,0.1,0.05,0.15C6.6,3.22,6.76,3.72,6.76,4.23
-                            c0,0.51-0.16,1.01-0.45,1.44C6.23,5.79,6.25,5.96,6.37,6.04C6.49,6.13,6.66,6.1,6.74,5.98c0,0,0,0,0.01-0.01
-                            C7.1,5.46,7.29,4.86,7.29,4.23c0-0.62-0.19-1.23-0.54-1.74C6.7,2.42,6.61,2.38,6.52,2.38z M4.23,2.45c-0.98,0-1.79,0.8-1.79,1.79
-                            s0.8,1.79,1.79,1.79s1.79-0.8,1.79-1.79S5.22,2.45,4.23,2.45z M4.23,2.97c0.7,0,1.26,0.56,1.26,1.26S4.93,5.49,4.23,5.49
-                            S2.97,4.93,2.97,4.23S3.54,2.97,4.23,2.97z"/>
-                    </g>
-                    </svg>
+                    <img id="Tab-Ico" src="./assets/icons/photo.on.rectangle.svg" alt="">
                     
                 </span>
             </span>
         </div>
 
         <div class="card-box">
-            <h4 class="box-title mbr-fonts-style align-center mbr-bold display-7">LIVE</h4>
+            <h4 class="box-title mbr-fonts-style align-center mbr-bold display-7">GALLERY</h4>
             
-            <p class="mbr-text mbr-fonts-style align-center display-5">Don't miss out the competition!&nbsp;</p>
+            <p class="mbr-text mbr-fonts-style align-center display-5">Videos & Photos <br> from the competition</p>
             <div class="mbr-section-btn align-center">
-                <a class="btn btn-sm btn-arrow btn-info-outline display-6" href="./live.html">Watch Here!</a>
+                <a class="btn btn-sm btn-arrow btn-info-outline display-6" href="./gallery.html">See Here!</a>
             </div>
             
         </div>
@@ -824,9 +845,9 @@
     </div>
 
     <div class="parteners">
-        <img src="./css/Sponsor Logos/ORG/international-gymnastics-federation-fig-vector-logo.svg" alt="">
-        <img src="./css/Sponsor Logos/ORG/FMS.png" alt="">
-        <img src="./css/Sponsor Logos/ORG/COSR.png" alt="">
+        <img src="./assets/Sponsor Logos/ORG/international-gymnastics-federation-fig-vector-logo.svg" alt="">
+        <img src="./assets/Sponsor Logos/ORG/FMS.png" alt="">
+        <img src="./assets/Sponsor Logos/ORG/COSR.png" alt="">
     </div>
 
 </section>
@@ -841,37 +862,7 @@
 
 
 <div class="container">
-   <section class="customer-logos slider white">
-      <div class="slide"><img src="./css/Sponsor Logos/OMV.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/RG.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/FCC.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/RENOV.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/VNT.svg"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/BRT.jpeg"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/BSNL.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/TAN.jpg"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/TEP.svg"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/TOY.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/TVR.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/BUCO.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/FG.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/EM.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/LS.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/Maspex.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/NEST.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/LOGO NOU.jpg"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/LM.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/MON.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/RG.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/SC.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/SPIETH.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/STERG.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/QS.jpg"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/AP.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/AR.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/IWA.png"></div>
-      <div class="slide"><img src="./css/Sponsor Logos/UZ.png"></div>
-   </section>
+   <section class="customer-logos slider white" id="append-in"></section>
 </div>
 </section>
 
