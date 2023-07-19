@@ -1,0 +1,244 @@
+.subtitle{
+    text-align: center;
+    height: 1.5rem;
+}
+
+.timer{
+    color: white;
+}
+
+.width-auto{
+    background: linear-gradient(135deg, rgb(70, 2, 24) 0%, rgba(153,14,44) 100%); 
+    padding: 2rem 2rem;
+    border-radius: 1rem;
+}
+
+.upper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-container { 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10rem;
+}
+
+.contact-head{
+    letter-spacing: normal;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color:  rgba(153,14,44);
+    margin: 0.75rem;
+}
+
+.contact-description{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact-description .mail {
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+}
+
+.contact-description a {
+    padding: 0.5rem;
+}
+
+.mail {
+    color: rgb(90, 9, 27);
+}
+
+.contact-box{
+    border: 1px solid rgb(235, 235, 235);
+    padding: 0.75rem;
+    margin: 1rem;
+    flex:1;
+}
+
+.contact-box:hover{
+    background-color: rgb(250, 250, 250) ;
+    -webkit-transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.5s;
+    box-shadow: -1rem 0rem rgb(70, 2, 24);
+}
+
+.collapsible {
+    background-color: rgba(153,14,44);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 10rem;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    border-radius: 50px;
+    margin: 1rem;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+  iframe {
+    width: 100%;
+    padding: 0;
+}
+
+.phone-cell{
+    display: grid; 
+    grid-template-columns: 50% 50%;
+}
+
+  @media only screen and (max-width:1200px) {
+
+    .phone-cell{
+        display: block; 
+    }
+
+    .adress{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-container {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .contact-box{
+        width: 90%;
+    }
+
+    .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+       
+      }
+
+      iframe {
+        width: 100%;
+        padding: 0;
+    }
+
+    .mailm {
+        line-height: 1.5rem
+    }
+
+    .mailr{
+        font-size: 0.75rem;
+    }
+  }
+
+.schedule-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+    line-height: 1.25rem;
+}
+
+.schedule-day {
+    margin-top: 1rem;
+}
+
+.schedule-days {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.day-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.schedule-form{
+    margin-top: 2rem;
+    background-color: white;
+}
+
+.s:hover .schedule-form{
+    background-color: rgb(250, 250, 250) ;
+    -webkit-transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.5s;
+}
+
+.arrow-left{
+    display: block;
+}
+
+.arrow-down{
+    display: none;
+}
+
+.m{
+    display: none;
+}
+
+.y{
+    display: block;
+}
+
+@media only screen and (max-width:1200px) {
+
+    .schedule-description p {
+        margin: 1rem 0 0 0;
+    }
+
+    .schedule-days {
+        flex-direction: column;
+    }
+    
+    .day-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .arrow-left{
+        display: none;
+    }
+
+    .arrow-down{
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .m{
+        display: flex;
+    }
+
+    .y{
+        display: none;
+    }
+
+}
+
+@media (min-width:1200px) and (max-width:1550px) {
+    .arrow-left{
+        width: 4rem;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1350px) {
+    .arrow-left{
+        display: none;
+    }
+}
