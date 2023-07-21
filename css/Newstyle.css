@@ -1488,6 +1488,12 @@ label{margin-bottom: 0;}
    justify-content: center;
 }
 
+.parteners a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+
 .parteners img {
     height: 4.5rem;
     object-fit: contain;
