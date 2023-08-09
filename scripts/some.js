@@ -15,6 +15,10 @@
               var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
               var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
               var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+              seconds < 10 ? seconds = "0" + seconds : null;
+              minutes < 10 ? minutes = "0" + seconds : null;
+              hours < 10 ? hours = "0" + seconds : null;
             
               // Display the result in the element with id="demo"
               document.getElementById("zile").innerHTML = days
