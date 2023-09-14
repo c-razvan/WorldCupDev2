@@ -1,4 +1,13 @@
-let arrSponsori = ["home", "live","event files","results","gallery","volunteer","contact"]
+let arrSponsori = [
+  "home",
+  "live",
+  "event files",
+  "results",
+  "gallery",
+  "accreditation",
+  "volunteer",
+  "contact",
+];
 
 for(let i=0; i<arrSponsori.length;i++){
 
