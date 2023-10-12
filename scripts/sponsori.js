@@ -2,6 +2,7 @@ let arr = [
   "BM.png",
   "WIN.png",
   "YOK.png",
+  "lifeart-logo.png.webp",
   "OMV.png",
   "RG.png",
   "FCC.png",
