@@ -5,7 +5,6 @@ let arrSponsori = [
   "results",
   "gallery",
   "accreditation",
-  "volunteer",
   "contact",
 ];
 
